@@ -12,7 +12,7 @@ export function Counter(){
     const countProgress = useMemo(() => {
         if(count < 0)  setCount(0)
         return count;
-    }, [count]);
+    }, [count, setCount]);
 
     return <>
         <RoundedButton onClick={() => setCount(count => count += 1)}>

@@ -6,6 +6,7 @@ export const catalogs: ICatalogs = [
         name: "Pearl Bracelet",
         price: 500000,
         image_url: "/assets/images/catalogs/necklace.png",
+        favorite: true,
         details: {
             description: "Elegant pearl bracelet made with high-quality pearls.",
             variants: [
@@ -34,7 +35,8 @@ export const catalogs: ICatalogs = [
         id: "002",
         name: "Pearl Ring",
         price: 300000,
-        image_url: "/assets/images/catalogs/necklace.png",
+        image_url: "/assets/images/catalogs/earring.png",
+        favorite: false,
         details: {
             description: "Beautifully crafted pearl ring with a timeless design.",
             variants: [
@@ -63,7 +65,8 @@ export const catalogs: ICatalogs = [
         id: "003",
         name: "Pearl Souvenir",
         price: 150000,
-        image_url: "/assets/images/catalogs/necklace.png",
+        image_url: "/assets/images/catalogs/bracelet_white.png",
+        favorite: true,
         details: {
             description: "A perfect gift or keepsake, featuring a delicate pearl design.",
             variants: [

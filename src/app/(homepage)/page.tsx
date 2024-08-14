@@ -26,7 +26,7 @@ export default async function Home() {
                         <ImageClient src={item.image_url} alt="earring" width={150} height={280}/>
                         <div className={styles.home__cardDescription}>
                             <p>{item.name}</p>
-                            <p className={fontStyles.Bold}>{item.price}</p>
+                            <p className={fontStyles.Bold}>Rp {item.price}</p>
                         </div>
                     </Card>
                 </Link>

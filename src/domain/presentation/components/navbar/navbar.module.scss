@@ -1,0 +1,34 @@
+@import "../../styles/variables.module";
+.navbar{
+  background-color: $white;
+  border: solid $grey 1px;
+  padding: 16px;
+  position: fixed;
+  bottom: 20px;
+  width: 80%;
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  &__lists{
+   display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin: 0;
+  }
+  &__item{
+    &.Active{
+      position: relative;
+      font-weight: 700;
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        background: $black;
+        bottom: -5px;
+        height: 2px;
+        width: 100%;
+      }
+    }
+  }
+}

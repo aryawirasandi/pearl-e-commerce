@@ -1,0 +1,99 @@
+@import "../../styles/variables.module";
+@import "../../styles/media-query.module.scss";
+
+.detail{
+  position: relative;
+  &__card{
+    &Description{
+      padding: 12px;
+      p{
+        &:nth-child(1){
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  &__images{
+    @include respond-to("md"){
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+  }
+  &__vector{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__loved{
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    border: solid $grey 1px;
+    width: 60px;
+    height: 60px;
+    &Active{
+      background: red;
+    }
+  }
+  &__description{
+    padding: 0 16px;
+    @include respond-to("md"){
+      display: none;
+    }
+    &Text{
+      margin: 16px 0px;
+      font-weight: normal;
+    }
+    &Desktop{
+      display: none;
+      @include respond-to("md"){
+        display: block;
+      }
+    }
+  }
+
+  &__recomendation{
+    display: flex;
+    flex-direction: column;
+    &List{
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      width: 100%;
+      justify-content: normal;
+      overflow: scroll;
+      @include respond-to("md"){
+        overflow: auto;
+      }
+    }
+    &Item{
+      min-width: 60%;
+      @include respond-to("md"){
+        min-width: 30%;
+      }
+    }
+    &Card{
+      border: solid $grey 1px;
+    }
+  }
+  &__quantity{
+    background: $grey_2;
+    border-radius: 32px;
+    border: solid $grey_2 1px;
+    min-height: 40px;
+    padding: 4px 8px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to("md"){
+      width: 50%;
+    }
+    &Action{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

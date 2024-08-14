@@ -1,0 +1,17 @@
+.cart{
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  &__card{
+    &Description{
+      padding: 12px;
+      p{
+        &:nth-child(1){
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

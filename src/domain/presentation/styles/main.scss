@@ -1,0 +1,17 @@
+@import "./variables.module";
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $white;
+  position: relative;
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+p{
+  margin: 0;
+}

@@ -1,0 +1,16 @@
+@import "../../styles/variables.module";
+@import "../../styles/media-query.module.scss";
+.gallery{
+  background: $grey;
+  min-height: 400px;
+  min-width: 400px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  @include respond-to("md"){
+    border-radius: 32px;
+    min-height: 100px;
+    min-width: 100px;
+  }
+  position: relative;
+  background-size: cover;
+}

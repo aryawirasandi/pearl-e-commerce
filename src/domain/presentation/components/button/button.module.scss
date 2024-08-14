@@ -1,0 +1,21 @@
+@import "../../styles/variables.module";
+.button{
+  &Rounded{
+    background: $white;
+    color: black;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+  }
+  &RoundedLink{
+    background: $white;
+    color: black;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+  }
+}

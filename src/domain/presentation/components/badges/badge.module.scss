@@ -1,0 +1,21 @@
+@import "../../styles/variables.module.scss";
+.badge{
+    &__primary{
+        background-color: $purple;
+        color: white;
+        padding: 16px;
+        border: solid $grey 1px;
+        width: fit-content;
+        border-radius: 16px;
+        margin-bottom: 12px;
+    }
+    &__secondary{
+        background-color: $grey;
+        color: white;
+        padding: 16px;
+        border: solid $grey 1px;
+        width: fit-content;
+        border-radius: 16px;
+        margin-bottom: 12px;
+    }
+}
